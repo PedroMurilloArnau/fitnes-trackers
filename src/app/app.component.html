@@ -1,0 +1,12 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav role="navegation">
+        <app-sidenav-list (closeSidenav)="sidenav.close()"></app-sidenav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+        <main>
+            <!--<button (click)="sidenav.toggle()">Show Sidenav </button>-->
+            <router-outlet></router-outlet>
+        </main>
+    </mat-sidenav-content>
+</mat-sidenav-container>

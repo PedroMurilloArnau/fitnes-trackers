@@ -1,0 +1,9 @@
+mat-form-field{
+    width: 300px;
+}
+.signup-form{
+    display: grid;
+    margin-top: 10%;
+    border-radius: 10%;
+
+}
